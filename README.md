@@ -9,11 +9,15 @@ Please note that Atlassian's products are solely the trademarks of Atlassian, th
 ### Version
 1.0.0
 
-### Installaion
+### Docker
 
-Clone down the repository
+```sh
+docker run -d -p 8888:8080 --restart=unless-stopped russell/fluffy-eureka
+```
 
 ### Installation
+
+Clone down the repository
 
 You need git & ruby installed globally:
 
