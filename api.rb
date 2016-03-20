@@ -27,6 +27,7 @@ def get_atlassian_release(app)
 end
 
 get '/:app' do
+  content_type 'application/json'
   app = params['app']
   get_atlassian_release(app).to_json
 end
