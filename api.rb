@@ -3,6 +3,9 @@ require 'sinatra'
 require 'open-uri'
 require 'json'
 
+set :bind, '0.0.0.0'
+set :port, 8080
+
 def get_atlassian_release(app)
   # Get payload from Atlassian
   json = open("https://my.atlassian.com/download/feeds/current/#{app}.json") { |f| f.read }
